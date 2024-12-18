@@ -1,0 +1,16 @@
+@WebApplication2_HostAddress = http://localhost:5015
+
+###
+
+GET https://localhost:7187/api/contracts?count=1000
+X-API-KEY: secure-api-key
+
+###
+POST https://localhost:7187/api/contracts
+Content-Type: application/json
+X-API-KEY: secure-api-key
+{
+  "ProductionFacilityCode": "PF001",
+  "ProcessEquipmentTypeCode": "ET001",
+  "EquipmentUnits": 2
+}
